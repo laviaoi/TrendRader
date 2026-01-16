@@ -1,3 +1,8 @@
 信号
 风险
 +GLP-1
+
+Tirzepatide
+Semaglutide
+替尔泊肽
+司美格鲁肽
