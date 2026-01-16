@@ -9,6 +9,13 @@ crawler:
   use_proxy: false # 是否启用代理，false 时为关闭
   default_proxy: "http://127.0.0.1:10086"
 
+rss:
+  request_interval: 2000            # 请求间隔（毫秒）
+  timeout: 15                       # 请求超时（秒）
+  use_proxy: false                  # 是否使用代理
+  proxy_url: ""                     # RSS 专属代理（留空则使用 crawler.default_proxy）
+  notification_enabled: true        # 是否启用 RSS 通知推送
+
 # 🔸 daily（当日汇总模式）
 #   • 推送时机：按时推送(默认每小时推送一次)
 #   • 显示内容：当日所有匹配新闻 + 新增新闻区域
@@ -165,3 +172,4 @@ rss:
     #   url: "https://example.com/feed.xml"
     #   enabled: false
     #   max_age_days: 0               # 示例：禁用过滤，推送所有文章
+
